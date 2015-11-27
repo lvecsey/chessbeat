@@ -9,3 +9,13 @@ Edit the USER variable and any other paths as needed.
 
 Then symlink the above directory to your /service or /etc/service area.
 
+--
+
+Finally, modify your nginx webserver to connect to the FastCGI process for the target location:
+
+    location /chessuci_app {
+       fastcgi_pass 192.168.1.75:9250;
+    }
+
+This should match the IP and port number in the run script.
+
