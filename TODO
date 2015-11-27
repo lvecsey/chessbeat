@@ -1,0 +1,2 @@
+Launch additional chess engine instances and make them available via spec.
+Log realtime timestamps (move data)

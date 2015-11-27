@@ -1,0 +1,11 @@
+
+sudo apt-get install spawn-fcgi
+
+Create a ~/svc.d/FastCGI_json-appliance directory (or similar name)
+
+Place the run_fastcgi script in there, as just run
+
+Edit the USER variable and any other paths as needed.
+
+Then symlink the above directory to your /service or /etc/service area.
+

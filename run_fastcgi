@@ -1,0 +1,10 @@
+
+#!/bin/bash
+
+USER='lvecsey'
+HOME='/home/'"$USER"
+
+export LD_LIBRARY_PATH="$HOME"'/src/fcgi-2.4.1-SNAP-0311112127/libfcgi/.libs'
+
+exec setuidgid "$USER" \
+spawn-fcgi -p 5251 -n -- ~/src/chessbeat/FastCGI_json-appliance
